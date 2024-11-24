@@ -1,0 +1,37 @@
+.main-container1 img {
+  width: 50%; /* Make the image responsive */
+  max-height: 200px; /* Limit the maximum height */
+  object-fit: cover; /* Maintain aspect ratio while covering its container */
+  cursor: pointer;
+}
+
+.product-details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e3dad3;
+  text-transform: uppercase;
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+
+.product.mtop:hover .product-details {
+  transform: scale(1.05);
+  color: #f3780b;
+}
+
+.product.mtop:hover img {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .main-container1 img {
+    max-height: 150px; /* Adjust maximum height for smaller screens */
+  }
+  
+  .product-details {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+}
